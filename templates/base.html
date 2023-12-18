@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{%block title%}Ariala AI{%endblock title%}</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='style.css')}}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/rastikerdar/sahel-font@v3.4.0/dist/font-face.css">
+  </head>
+
+  <body class="dark-defualt">
+    
+
+
+  {%block main%}
+
+
+  {%endblock main%}
+
+  <script>
+    let darkThmeDefulat = document.querySelector(".theme-dark-defulat");
+    let darkThmeAnna = document.querySelector(".theme-dark-anna")
+    let light = document.querySelector('.theme-light')
+    let body = document.querySelector('body')
+    let selectedTheme = localStorage.getItem("theme") ? localStorage.getItem("theme"): "dark-defulat";
+    body.className = selectedTheme
+    darkThmeDefulat.addEventListener('click',e=>{
+        body.className = "dark-defulat";
+        localStorage.setItem("theme","dark-defulat");
+    })
+    darkThmeAnna.addEventListener('click',e=>{
+        body.className = "dark-anna";
+        localStorage.setItem("theme","dark-anna");
+    })
+    light.addEventListener('click',e=>{
+        body.className = "light";
+        localStorage.setItem("theme","light");
+    })
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>

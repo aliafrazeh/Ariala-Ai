@@ -1,0 +1,46 @@
+    *{
+      font-family: 'Sahel' ,sans-serif;
+    }
+  
+    body{
+      background-color: #111;
+      /* #22262b  #fff*/
+      color: #f4f4f4;
+      
+    }
+    input{
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #fff;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      float: left;
+      text-align: left;
+      border: 2px solid #111;
+      border-radius: 4px;
+      direction: ltr;
+      transition: 0.10s;
+    }
+    input:focus{
+      outline: none;
+      border: 2px solid #12bf35;
+      transition: 0.1s;
+    }
+    input:hover{
+      outline: none;
+    }
+    .dark-anna{
+      background-color: #22262b;
+      color: #fff;
+    }
+    .dark-defulat{
+      background-color: #111;
+      color: #fff;
+    }
+    .light{
+      background-color: #f4f4f4;
+      color: #0e0e0e;
+    }

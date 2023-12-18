@@ -1,0 +1,42 @@
+{%extends 'base.html'%}
+{%block title%}
+Ariala Ai Chat Experiment | Beta 1.0
+{%endblock title%}
+
+{%block main%}
+
+<div class="chatbox__support" >
+
+<div class="chatbox__messages" style="margin: 50px;">
+  <h2 style="color: rgb(40, 160, 4, 215);"">Welcome to Ariala Chat Experiment | Beta 1.0</h2>
+  <p></p>
+  <div></div>
+ 
+</div>
+
+
+
+
+<input type="text" placeholder="Message">
+<div style="float: right; text-align: right; direction: rtl;">
+<button style="margin: 0;
+padding: 0;
+overflow: hidden;
+position: fixed;
+bottom: 0;
+width: 50px;
+border-radius: 0 15px 15px 0 !important;
+background-color: #000 !important;
+border: 0 !important;
+color: white !important;
+
+cursor: auto;" class="send__button">Send</button>
+
+</div>
+<script>
+ $SCRIPT_ROOT = {{request.script_root|tojson}}
+</script>
+<script src="{{url_for('static',filename='app.js')}}"></script>
+
+</div>
+{%endblock main%}

@@ -1,0 +1,71 @@
+{"intents": [
+        {"tag": "greeting",
+         "patterns": ["Hi", "How are you", "Is anyone there?", "Hello", "Good day", "Whats up"],
+         "responses": ["Hello!", "hi", "Hi"],
+         "context_set": ""
+        },
+        {"tag": "goodbye",
+         "patterns": ["cya", "See you later", "Goodbye", "I am Leaving", "Have a Good day"],
+         "responses": ["goodbye!", "goodbye", "Goodbye!"],
+         "context_set": ""
+        },
+        {"tag": "age",
+         "patterns": ["how old", "how old is tim", "what is your age", "how old are you", "age?"],
+         "responses": ["I am an artificial intelligence"],
+         "context_set": ""
+        },
+        {"tag": "name",
+         "patterns": ["what is your name", "what should I call you", "whats your name?"],
+         "responses": ["my name is Ariala-ai", "Ariala-ai", "Ariala"],
+         "context_set": ""
+        },
+        {"tag": "Ariala",
+         "patterns": ["Ariala", "Ariala-Ai", "whats is Ariala ai ?", "Whats Ariala Ai"],
+         "responses": ["my name is Ariala. I can help you answer your questions", "My Name Ariala ai"],
+         "context_set": ""
+        },
+        {"tag": "سلام",
+         "patterns": ["سلام", "سلام خوبی"],
+         "responses": ["سلام اسم من آریلا هست چطور می تونم کمکت کنم", "سلام من آریالا هستم خوش حال می شم کمک کنم"],
+         "context_set": ""
+        },
+        {"tag": "در مورد خودت بگو",
+         "patterns": ["در مورد خودت بگو", "تو کی هستی", "اسم تو چیست","اسمت چیه"],
+         "responses": ["من آریالا هستم من یک مدل زبان هوش مصنوعی هستم","من یک مدل زبانی هوش مصنوعی هستم و اسم من آریالا هست"],
+         "context_set": ""
+        },
+        {"tag": "در مورد فضا",
+         "patterns": ["در مورد فضا بگو", "می شه در مورد فضا بگی","در مورد فضا سخن بگو"],
+         "responses": ["فضا یک موضوع گسرده و جذاب است. این محیط بی پایان شامل سیارات میان ستارگان کهکشان ها و سایر اجسام آسمانی است جبران ناپذیری وسیعی که از زمان وجود دارد و همچین پدیده هایی چون جاذبه نور و انفجار های نجومی این علم را بسیار پیچیده و شگفت انگیز می سازد."],
+         "context_set": ""
+        },
+       
+        {"tag": "امسال چه سالی است",
+         "patterns": ["امسال چه سالی است", "این سال چه سالی است", "چه سالی است", "الان کی است"],
+         "responses": ["در حال حاضر امسال اواخر ۲۰۲۳ هست", "امسال سال ۲۰۲۳ است"],
+         "context_set": ""
+        },
+        {"tag": "خوبی",
+        "patterns": ["خوبی سلامتی", "خوبی", "خویی سلامتتی", "خوییی"],
+        "responses": ["متشکرم ولی من یک مدل زبانی هستم چطور می تونم کمک کنم", "ممنون . ولی من یک مدل زبانی هستم حالتی ندارم."],
+        "context_set": ""
+       },
+       {"tag": "نه",
+        "patterns": ["نه"],
+        "responses": ["نه ؟ چرا نه", "دلیل نه گفتن تون چیست؟"],
+        "context_set": ""
+       },
+       {"tag": "اره",
+        "patterns": ["اره","آره"],
+        "responses": ["آره می تونم بپرسم چرا اره"],
+        "context_set": ""
+        
+       },
+       {"tag": "مشکل",
+         "patterns": ["مشکلت چیه","مشکل داری"],
+         "responses": ["مشکل من ندارم امید وارم شما هم مشکلی نداشته باشید"],
+         "context_set": ""
+       }
+    
+   ]
+}

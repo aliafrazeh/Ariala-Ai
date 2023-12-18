@@ -1,0 +1,20 @@
+{%extends 'base.html'%}
+
+
+{%block title%}Ariala Ai Beta 1.0{%endblock title%}
+
+{%block main%}
+
+              
+<button class="theme-dark-defulat btn" style="background-color: #111; color: #fff;  border-radius: 2px;">Dark Default</button>
+<button class="theme-dark-anna btn"  style="background-color: #22262b; color: #fff;  border-radius: 2px;">Dark Normal</button>
+<button class="theme-light btn" style="background-color: #f4f4f4; color: #111; border-radius: 2px;">Ligth</button>
+
+<div style="margin: 35px;">
+    <h1 style="color: rgb(8, 145, 310)">Welcome to Ariala Experiment | Beta 1.0</h1>
+    <a href="{{url_for('chat')}}" style="background-color: rgb(1, 161, 68); color: #f7f7f7; padding: 6px 25px 6px 25px; border: 1px solid #000000; border-radius: 2px; text-decoration:none;">Get Started</a>
+</div>
+
+
+
+{%endblock main%}
